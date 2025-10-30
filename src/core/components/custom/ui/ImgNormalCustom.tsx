@@ -8,7 +8,7 @@ type ImageNormalCustomProps = ImageProps & {
 };
 
 function ImgNormalCustom({
-  src = "/placeholder-image.jpg",
+  src = "/placeholder.svg",
   alt = "defult alt",
   className,
   ...rest
