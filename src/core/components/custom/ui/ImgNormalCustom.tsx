@@ -25,9 +25,7 @@ function ImgNormalCustom({
       className={className}
       placeholder={placeholderValue}
       {...rest}
-    >
-      ImgNormalCustom
-    </Image>
+    />
   );
 }
 

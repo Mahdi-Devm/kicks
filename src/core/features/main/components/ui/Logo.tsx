@@ -5,7 +5,12 @@ import React from "react";
 function Logo() {
   return (
     <Link href={"/"}>
-      <ImgNormalCustom alt="logo" src={"/common/image/logo/Logo.png"} />
+      <ImgNormalCustom
+        alt="logo"
+        src={"/common/img/logo.png"}
+        width={100}
+        height={100}
+      />
     </Link>
   );
 }

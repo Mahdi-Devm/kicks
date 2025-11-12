@@ -1,15 +1,28 @@
-import SectionLayout from "@/core/components/custom/ui/SectionLayout";
-import React from "react";
+"use client";
 
-function page() {
+import SectionLayout from "@/core/components/custom/ui/SectionLayout";
+import { TypographyBig } from "@/core/components/custom/ui/Typography";
+import HeroSiperSection from "@/core/features/main/components/ui/HeroSiperSection";
+
+import CardProduct from "@/core/features/main/components/ui/CardProduct";
+import { products } from "@/core/assets/mock/products";
+import HeadeCardProduct from "@/core/features/main/components/ui/HeadeCardProduct";
+
+export default function HeroBannerWithClickableThumbs() {
   return (
-    <SectionLayout>
-      <h1>hello world</h1> {/* ← Rubik */}
-      <p>تست بدون کلاس</p> {/* ← Rubik */}
-      <div className="font-bold">بولد</div> {/* ← Rubik Bold */}
-      <span>معمولی</span> {/* ← Rubik Regular */}
-    </SectionLayout>
+    <>
+      <SectionLayout>
+        <TypographyBig className="tracking-widest ">
+          DO IT <span className="text-primary">RIGHT</span>
+        </TypographyBig>
+      </SectionLayout>
+      <SectionLayout>
+        <HeroSiperSection />
+      </SectionLayout>
+      <SectionLayout>
+        <HeadeCardProduct />
+        <CardProduct products={products} />
+      </SectionLayout>
+    </>
   );
 }
-
-export default page;
