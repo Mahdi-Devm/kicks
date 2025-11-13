@@ -11,7 +11,7 @@ function NavItemsHeaderDesktop() {
   return (
     <nav className="hidden lg:flex items-center gap-6">
       <span className="flex items-center gap-1">
-        New Drops <span className="text-orange-500">🔥</span>
+        Shop <span className="text-orange-500">👟</span>
       </span>
       <DropdownMenu>
         <DropdownMenuTrigger className="flex items-center ">
